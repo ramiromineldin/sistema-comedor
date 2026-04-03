@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+
+.box{
+  background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 30px;
+    padding:40px;
+    box-shadow: 0 2px 8px rgba(0.5, 0.5, 0.5, 0.5);
+    color: rgb(34, 30, 25);
+    width: 320px;
+    border-color: #190861;
+    
+}
+
+label {
+    color: #190861;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .forgotButton {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #6AAEE0;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .titulo{
+    display: flex;
+    justify-content: center;
+  }

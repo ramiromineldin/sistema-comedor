@@ -1,0 +1,150 @@
+.fondoAdmin {
+    position: relative;      
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3cdc4; 
+    overflow: hidden;
+  }
+
+  .fondoAdmin::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imagenes/fondoAdmin.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.20;            
+    z-index: 1;               
+  }
+  
+
+  .fondoAdmin > * {
+    position: relative;
+    z-index: 2;              
+  }
+
+
+  .fondoPersonal{
+    position: relative;      
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3cdc4; 
+    overflow: hidden;
+  }
+
+  .fondoPersonal::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imagenes/fondoCocina.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.30;            
+    z-index: 1;
+  }
+
+  .fondoPersonal > * {
+    position: relative;
+    z-index: 2;              
+  }
+
+  .fondoEstudiante{
+    position: relative;      
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3cdc4; 
+    overflow: hidden;
+  }
+
+  .fondoEstudiante::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imagenes/fondoEstu.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;            
+    z-index: 1;
+  
+  }
+
+  .fondoEstudiante > * {
+    position: relative;
+    z-index: 2;              
+  }
+
+
+  .navbar{
+    display:flex;
+    padding: 1.6em;
+    opacity: 0.95;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  .icono{
+    font-style: inherit;
+    margin:0;
+    font-size: 29px;
+  }
+
+  .navItems{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .navItem{
+    display: flex;
+    background: transparent;
+    border: none;
+    transition: 0.2s all ease-out;
+    align-items: center;
+  }
+
+  .navItem:hover{
+    background-color:aliceblue;
+  }
+
+
+  .signup{
+    background:transparent;
+    cursor:default;
+    border-color: aliceblue;
+  }
+
+  .signup:hover{
+    border-color: aliceblue;
+  }
+
+  .adminItem:hover{
+    color:#395886;
+  }
+
+  .personalItem:hover{
+    color:#628ECB;
+  }
+
+  .estudianteItem:hover{
+    color:#6AAEE0;
+  }
+
+
+
+  
+  

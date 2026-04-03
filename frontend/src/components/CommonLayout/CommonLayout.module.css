@@ -1,0 +1,47 @@
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: end;
+  margin: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.topBar > * {
+  margin: 0 1rem;
+}
+
+.topBar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.topBar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.body {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  padding: 2rem;
+  background-color: #358CCF;
+}
+

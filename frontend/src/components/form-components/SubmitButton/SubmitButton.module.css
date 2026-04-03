@@ -1,0 +1,5 @@
+.button {
+  grid-column: span 2;
+  background-color: #3a6d92;
+  color: white;
+}

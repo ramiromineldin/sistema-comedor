@@ -1,0 +1,155 @@
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.pedidoInfo h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.fecha {
+  margin: 4px 0 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.estado {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.body {
+  margin-bottom: 16px;
+}
+
+.productos h4 {
+  margin: 0 0 8px 0;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.productos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.producto:last-child {
+  border-bottom: none;
+}
+
+.cantidad {
+  font-weight: bold;
+  color: #3498db;
+  min-width: 40px;
+  font-size: 0.9rem;
+}
+
+.nombre {
+  flex: 1;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.observaciones {
+  margin-top: 12px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  font-size: 0.9rem;
+}
+
+.total {
+  margin-top: 12px;
+  text-align: right;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  padding-top: 8px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.cancelarBtn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.cancelarBtn:hover {
+  background: #c82333;
+}
+
+.listoMsg {
+  background: #d4edda;
+  color: #155724;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: 1px solid #c3e6cb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .producto {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+}

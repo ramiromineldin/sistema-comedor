@@ -1,0 +1,46 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:1.1rem;
+  background-color: #628ecb;
+  
+
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.menuButton {
+  cursor: pointer;
+  color: antiquewhite;
+  background: transparent;
+  border: none;
+}
+
+.menuButton:hover{
+  background:rgba(0, 0, 0, 0.15);
+}
+
+
+.titulo {     
+  text-align: center;    
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.container{
+  display: flex;
+  font-size: 1.8rem;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+

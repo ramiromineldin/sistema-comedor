@@ -1,0 +1,10 @@
+.background{
+    display: flex;
+    flex-direction: column;
+    background-color:#cfd6e2;
+    gap: 0;
+    justify-items: center;
+    height: min(100vh);
+    width: min(100vw);
+    overflow: auto;
+}

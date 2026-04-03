@@ -1,0 +1,246 @@
+.pedidoCard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.pedidoCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pedidoInfo h3 {
+  margin: 0 0 4px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cliente {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.estado {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pendiente {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.enPreparacion {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #74b9ff;
+}
+
+.preparado {
+  background-color: #cce7ff;
+  color: #004085;
+  border: 1px solid #0984e3;
+}
+
+.entregado {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #00b894;
+}
+
+.cancelado {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #e17055;
+}
+
+.rechazado {
+  background-color: #f5c6cb;
+  color: #721c24;
+  border: 1px solid #d63031;
+}
+
+.detalles {
+  margin-bottom: 16px;
+}
+
+.detalles h4 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.producto:last-child {
+  border-bottom: none;
+}
+
+.cantidad {
+  font-weight: 600;
+  color: #0984e3;
+  min-width: 40px;
+}
+
+.nombre {
+  flex: 1;
+  margin: 0 12px;
+  color: #333;
+}
+
+.precio {
+  font-weight: 600;
+  color: #00b894;
+}
+
+.observaciones {
+  background-color: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #495057;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.tiempo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tiempo small {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+.total {
+  color: #00b894;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.actionBtn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.actionBtn.enPreparacion {
+  background-color: #74b9ff;
+  color: white;
+}
+
+.actionBtn.enPreparacion:hover {
+  background-color: #0984e3;
+  transform: translateY(-1px);
+}
+
+.actionBtn.preparado {
+  background-color: #0984e3;
+  color: white;
+}
+
+.actionBtn.preparado:hover {
+  background-color: #004085;
+  transform: translateY(-1px);
+}
+
+.actionBtn.entregado {
+  background-color: #00b894;
+  color: white;
+}
+
+.actionBtn.entregado:hover {
+  background-color: #00a085;
+  transform: translateY(-1px);
+}
+
+.actionBtn.rechazado {
+  background-color: #d63031;
+  color: white;
+}
+
+.actionBtn.rechazado:hover {
+  background-color: #b71c1c;
+  transform: translateY(-1px);
+}
+
+.actionBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .pedidoCard {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .actionBtn {
+    flex: 1;
+    min-width: 120px;
+  }
+}

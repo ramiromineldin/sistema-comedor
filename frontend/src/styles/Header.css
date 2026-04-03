@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    color: #2c3e50;
+    padding: 10px 30px;
+    height: 60px;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .userMenu {
+    position: relative;
+  }
+  
+  .userButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .userButton:hover {
+    color: #000;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 6px 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    animation: fadeIn 0.15s ease-in;
+  }
+  
+  .dropdown p {
+    margin: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown p:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .logout {
+    color: #e74c3c;
+  }
+  
+  hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,90 @@
+
+.icono {
+  position: absolute;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  top: 29%;
+  margin-left: 20px;
+  
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.input{
+
+  width: 100%;
+  color:rgb(0, 0, 20);
+  background-color: white;
+  border-color: transparent;
+  border-radius:50px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-top: 16px;
+  outline: none;
+  transition: none;
+  
+   
+  
+}
+
+.input:focus{
+  border-color: rgb(73, 137, 167);
+  border-style:solid;
+
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+  background-color: white !important;
+  border: 1px solid transparent !important;
+  -webkit-text-fill-color: rgb(0, 0, 20) !important;
+}
+
+input:-moz-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
+  background-color: white !important;
+  border: 1px solid transparent !important;
+  color: rgb(0, 0, 20) !important;
+}
+
+
+input:-webkit-autofill:valid,
+input:-webkit-autofill:invalid {
+  border: 1px solid transparent !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+
+
+
+.inputWrapper{
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.showPassword{
+  position: absolute;
+  background-color: transparent;
+  color: black;
+  right: 8px;
+  top: 15%;
+
+}
+
+.showPassword:hover{
+  border: transparent;
+  color:blue;
+
+}
